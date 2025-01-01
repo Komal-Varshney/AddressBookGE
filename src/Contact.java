@@ -4,10 +4,10 @@ public class Contact {
     String city;
     String state;
     String email;
-    String phone;
-    String zip;
+    int phone;
+    int zip;
 
-    public Contact(String firstName, String lastName, String city, String state, String email, String phone, String zip) {
+    public Contact(String firstName, String lastName, String city, String state, String email, int phone, int zip) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.city = city;
