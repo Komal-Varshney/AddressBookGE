@@ -4,10 +4,10 @@ public class Contact {
     String city;
     String state;
     String email;
-    int phone;
-    int zip;
+    String phone;
+    String zip;
 
-    public Contact(String firstName, String lastName, String city, String state, String email, int phone, int zip) {
+    public Contact(String firstName, String lastName, String city, String state, String email, String phone, String zip) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.city = city;
@@ -16,5 +16,17 @@ public class Contact {
         this.phone = phone;
         this.zip = zip;
     }
-    // which data structure should we use to store contacts
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", email='" + email + '\'' +
+                ", phone=" + phone +
+                ", zip=" + zip +
+                '}';
+    }
 }
