@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class AddressBook {
     List<Contact> adBook = new ArrayList<>();
+//    List<PlaceHolder> adBook = new ArrayList<>();
 
     public void display(){
         System.out.println(adBook);
     }
+
+
 
     public void createContact(){
         Scanner sc = new Scanner(System.in);
@@ -29,6 +32,8 @@ public class AddressBook {
         adBook.add(c1);
 //        sc.close();
     }
+
+
 
 }
 
