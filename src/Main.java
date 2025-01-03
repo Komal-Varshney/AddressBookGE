@@ -2,8 +2,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        AddressBook a1 = new AddressBook();
         AddressBook<Contact> a1 = new AddressBook<>();
+        a1.adBook.add(new Contact("a","a","a","a","a",12,15));
+        a1.adBook.add(new Contact("b","b","b","b","b",13,16));
+        a1.adBook.add(new Contact("c","c","c","c","c",14,17));
+        a1.adBook.add(new Contact("d","d","d","d","d",15,18));
+        a1.adBook.add(new Contact("e","e","e","e","e",17,19));
+        a1.adBook.add(new Contact("f","f","","f","f",20,21));
+        a1.adBook.add(new Contact("g","g","g","g","g",22,23));
+        a1.adBook.add(new Contact("h","h","h","h","h",22,23));
+        a1.adBook.add(new Contact("i","i","i","i","i",23,24));
+        a1.adBook.add(new Contact("j","j","j","j","j",34,35));
+        a1.adBook.add(new Contact("k","k","k","k","k",36,67));
+
+
+
         int i = 1;
 
         LinkedListDemo<Contact> l1 = new LinkedListDemo<>();
@@ -11,12 +24,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Address book");
         do {
-            System.out.println("Enter 1 to create contact \nEnter 2 to display al contacts \nEnter 3 to migrate data to custom linked list \nEnter 4 to display migrate list");
+            System.out.println("Enter 1 to create contact \nEnter 2 to display al contacts \nEnter 3 to search \nEnter 4 to display migrate list");
             int input = sc.nextInt();
             switch (input) {
                 case 1 -> a1.createContact(createContact());
                 case 2 -> a1.display();
-                case 3 -> l1.migrate(a1);
+                case 3 ->a1.search();
                 case 4 -> l1.printMigrateList();
                 default -> System.out.println("Wrong input");
             }

@@ -1,4 +1,4 @@
-public class Contact {
+public class Contact implements Dummy1{
     String firstName;
     String lastName;
     String city;
@@ -28,5 +28,10 @@ public class Contact {
                 ", phone=" + phone +
                 ", zip=" + zip +
                 '}';
+    }
+
+    @Override
+    public String getFirstName() {
+        return firstName;
     }
 }
